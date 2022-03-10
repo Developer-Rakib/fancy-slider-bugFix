@@ -64,6 +64,7 @@ const createSlider = () => {
     alert('Please Enter more than 100 ms');
     return;
   }
+
   // crate slider previous next area
   sliderContainer.innerHTML = '';
   const prevNext = document.createElement('div');
@@ -75,6 +76,7 @@ const createSlider = () => {
 
   sliderContainer.appendChild(prevNext)
   document.querySelector('.main').style.display = 'block';
+
   // hide image aria
   imagesArea.style.display = 'none';
   const duration = durationElement.value || 1000;
